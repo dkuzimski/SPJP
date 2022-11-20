@@ -1,26 +1,12 @@
-#include<stdio.h>
-void main()
-{
-    printf("Hello, World \n");
+#include <stdio.h>
 
-int a,b;
-
-printf("Podaj Pierwszą Liczbę: ");
-scanf("%d", &a);
-
-printf("Podaj Drugą Liczbę: ");
-scanf("%d", &b);
-
-printf("\n Dodawanie");
-printf(" = %d",(a+b));
-
-printf("\n Odejmowanie");
-printf(" = %d",(a-b));
-
-printf("\n Mnożenie");
-printf(" = %d",(a*b));
-
-printf("\n Dzielenie");
-printf(" = %d\n",(a/b));
-
+int main () {
+    int a, b;
+    int suma = 1;
+    printf("Podaj liczbe naturalną a i b\n");
+    scanf("%d%d" ,&a ,&b);
+    for (int i=1; i <= b; ++i) {
+        suma *= a;
+    }
+    printf("liczba a do potęgi b to: %d\n", suma);
 }

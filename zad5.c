@@ -1,17 +1,18 @@
-#include<stdio.h>
+#include <stdio.h>
 
-int main()
-{
-    char znak;
-
-    scanf("%d", &znak);
-
-    if (znak>=65 && znak<=90){
-        printf("Duża litera \n", a);
-    } else if(...){
-        printf("Porównuje... \n", b);
-    } else({
-        printf("brak \n");
-    };
-
+int main() {
+    int n;
+    scanf("%d", &n);
+    int a[n];
+    for (int i = 0 ; i < n; i++)
+    {
+        scanf("%d", &a[i]);
+    }
+    for (int i = 0 ; i < n; i++)
+    {
+        printf("%d ", a[i]);
+        if( i == n -1) {
+            printf("\n");
+        }
+    }
 }

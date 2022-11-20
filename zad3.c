@@ -1,21 +1,15 @@
-#include<stdio.h>
+#include <stdio.h>
 
-int main()
-{
+int main () {
     int a, b;
-
-    printf("Podaj pierwszą liczbę: ");
-    scanf("%d", &a);
-    
-    printf("Podaj drugą liczbę: ");
-    scanf("%d", &b);
-
-    if (a>b){
-        printf("Liczba %d, jest większa. \n", a);
-    } else if(a<b){
-        printf("Liczba %d, jest większa. \n", b);
-    } else{
-        printf("Liczby są równe. \n");
-    };
-
+    int suma = 1;
+    printf("Podaj liczbe naturalną a i b\n");
+    scanf("%d%d" ,&a ,&b);
+    for (int c=1; c <= b; ++c) {
+        suma *= a;
+        if(suma > b) {
+            return printf("a do potęgi %d jest większe od b", c);
+        }
+    }
+   
 }

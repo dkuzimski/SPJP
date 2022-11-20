@@ -1,25 +1,15 @@
 #include <stdio.h>
 
 int main() {
-   int a, b, c;
+    int a[] = {1,2,3,4,5,6,7}; 
+    int n = sizeof(a) / sizeof(int);
 
-    printf("Podaj pierwszą liczbę: ");
-    scanf("%d", &a);
-    
-    printf("Podaj drugą liczbę: ");
-    scanf("%d", &b);
-    
-    printf("Podaj trzecią liczbę: ");
-    scanf("%d", &c);
-
-   if ( a > b && a > c )
-      printf("%d jest największą liczbą \n", a);
-   else if ( b > a && b > c )
-      printf("%d jest największą liczbą \n", b);
-   else if ( c > a && c > b )
-      printf("%d jest największą liczbą \n", c);
-   else   
-      printf("Równe liczby");
-
-   return 0;
+    for (int i = 0; i < n; i++) 
+    {
+        a[i]= a[i] * a[i];
+        printf("%d ", a[i]);
+        if( i == n -1) {
+            printf("\n");
+        }
+    }
 }
